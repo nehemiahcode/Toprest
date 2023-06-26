@@ -6,6 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 
+
 function App() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -121,12 +122,12 @@ export function Image() {
 
           <Button>See our Menu</Button>
           <img
-            src="src\assets\home-bottom-left.png"
+            src="src\home-bottom-right - Copy.png"
             alt=""
             className=" absolute left-10 md:left-[20%]  w-[50px] h-[70px]"
           />
           <img
-            src="src\assets\home-bottom-right - Copy.png"
+            src="src\home-bottom-right - Copy.png"
             alt=""
             className=" absolute left-10 top-[0] md:left-[23%] w-[90px] h-[70px]"
           />
