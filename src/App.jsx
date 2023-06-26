@@ -3,7 +3,10 @@ import "./App.css";
 import Button from "./Styles/Styles";
 import { Typography } from "./Styles/Styles";
 import Aos from "aos";
-import image from "./home-bottom-left.png" 
+import Topimage from "./assets/home-bottom-right.png"
+import CenterImage from "./assets/home-banner.png";
+import Flower from "./assets/home-bottom-left.png"
+import Images from "./assets/about-img.jpg"
 import "aos/dist/aos.css";
 
 
@@ -20,8 +23,9 @@ function App() {
     { id: 4, url: "", text: "  BLOG" },
   ];
 
+
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
 
@@ -108,7 +112,7 @@ export function Image() {
   return (
     <>
       <div className=" grid grid-cols-1 lg:grid-cols-2 w-[100%] h-[auto] mt-1 font-display">
-        <div data-aos="slide-right" className="w-[100%] h-[auto] md:pl-10 px-2 sm:px-8 relative text-center lg:text-left">
+        <div data-aos="slide-right" className="w-[100%]  h-[auto] md:pl-10 px-2 sm:px-8 relative text-center lg:text-left">
           <h1
             className=" font-extrabold text-black font-display
              pt-16  md:leading-normal leading-snug md:text-[2.6rem] text-[2.3rem] "
@@ -123,21 +127,21 @@ export function Image() {
 
           <Button>See our Menu</Button>
           <img
-            src="about-img-2.jpg"
+            src={Flower}
             alt=""
             className=" absolute left-10 md:left-[20%]  w-[50px] h-[70px]"
           />
           <img
-            src="src\home-bottom-right - Copy.png"
+            src={Topimage}
             alt=""
             className=" absolute left-10 top-[0] md:left-[23%] w-[90px] h-[70px]"
           />
         </div>
-        <div  data-aos="slide-left" className=" w-[100%] h-[500px] flex items-center justify-center">
+        <div  data-aos="slide-left" className=" w-[100%]   h-[500px] flex items-center justify-center">
           <img
-            src={image}
+            src={CenterImage}
             alt=""
-            className="w-[450px] h-[430px] lg:w-[490px] md:w-[450px] md:h-[450px] lg:h-[490px]"
+            className="w-[400px] h-[400px] lg:w-[490px] md:w-[450px] md:h-[450px] lg:h-[490px]"
           />
         </div>
       </div>
@@ -149,11 +153,11 @@ export function OurstoryPage() {
   return (
     <>
       <div className="flex flex-col-reverse lg:flex-row w-[100%] h-[auto] font-display">
-        <div  data-aos="slide-right" className=" w-[100%] h-[500px]  px-7 py-10 flex justify-center items-center bg-image2 ">
-                <img src="about-img.jpg" alt="" className=" h-[400px] w-[400px]" />
+        <div  data-aos="slide-right" className=" w-[100%]  h-[500px]  px-7 py-10 flex justify-center items-center bg-image2 ">
+                <img src={Images} alt="" className=" h-[400px] w-[400px]" />
                 
         </div>
-        <div  data-aos="slide-left" className=" w-[100%] h-[700px] px-7 py-10">
+        <div  data-aos="slide-left" className=" w-[100%] h-[auto] px-5 py-10">
           <h1 className=" text-lime-500 font-medium text-2xl">Our Story</h1>
           <h1 className=" text-black font-extrabold text-5xl pt-3">About Us</h1>
           <Typography>
