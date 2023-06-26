@@ -3,6 +3,7 @@ import "./App.css";
 import Button from "./Styles/Styles";
 import { Typography } from "./Styles/Styles";
 import Aos from "aos";
+import image from "./home-bottom-left.png" 
 import "aos/dist/aos.css";
 
 
@@ -122,7 +123,7 @@ export function Image() {
 
           <Button>See our Menu</Button>
           <img
-            src="src\home-bottom-right - Copy.png"
+            src="about-img-2.jpg"
             alt=""
             className=" absolute left-10 md:left-[20%]  w-[50px] h-[70px]"
           />
@@ -134,7 +135,7 @@ export function Image() {
         </div>
         <div  data-aos="slide-left" className=" w-[100%] h-[500px] flex items-center justify-center">
           <img
-            src="src\assets\home-banner.png"
+            src={image}
             alt=""
             className="w-[450px] h-[430px] lg:w-[490px] md:w-[450px] md:h-[450px] lg:h-[490px]"
           />
